@@ -1,0 +1,202 @@
+Questions:
+
+https://github.com/gholin/RPGsheet
+
+
+Hackweek Video
+
+Cyberpunk theme
+
+Script:
+
+This is Shep. 
+I'm talking like Batman because I want to be edgy, but it just sounds like I have a cold, so anyway...
+
+For hackweek, I was inspired by all the brilliant engineers I have worked with at Instructure, both Dev and QA.
+
+I want to be like you! So, I decided to learn how to make an app and run a bridge-learn like suite of js tests against it, all at once.
+
+I did this in three phases.
+
+Phase 1: Learn HTML and JS
+I chose to make a simple RPG character sheet page in HTML with JS doing all the work in the background. 
+Even my form was totally programmed in JS, so I could understand how to use it.
+
+
+Phase 2: Convert to React
+After I got comfortable with JS and HTML, I decided to try a React App and hooked it up to an Express JS backend
+
+This was most of my hackweek because it was HARD to wrap my head around React.
+
+Finally, with some help, I got through my blockers, and got a fully react version of my character sheet App going.
+It talks to my Express JS backend by pulling a default character template through API fetches! \o/
+
+Phase 3: Write Bridge Learn-like JS tests
+
+Next steps:
+Database, exporting, building out RPG stats more, the works!
+
+Special thanks to Ryan Done for expert help when I got blocked using React!
+Thanks to Luke Busler for giving me ideas on  how to start this up
+Thanks to Johnny Le, Adam Crownoble, Daniel Kesler, and Spencer Miller for being so helpul when I had questions
+
+
+
+
+1. Explain I made an html/js page from scratch, and now am trying to do the same page in a react app with an express backend.
+2. Show the app.
+
+Questions
+1. I have a character I create in my constructor and pull a default character from the backend and set the character's state to have those details.
+2. How do I set what's in a field (Make something 0)?
+3. How do I pass things from the field to my character
+4. How do you access elements from child react components?
+
+
+
+Hackweek Feb 2018
+Goal: 
+1. Learn how to build a simple web app based on HTML, react and JS (or something like a barebones bridge, rails + js in views)
+2. Learn how to write js tests for a basic web app using technologies we use (sinon, mocha, react-drill, chai).
+
+
+Techs to use
+------------
+Rails
+React
+SQlite (Sort of built into rails already)
+Webpacker? https://github.com/rails/webpacker#react (sets up rails app with react all hooked up)
+Jest and Enzyme
+https://mongoosejs.com and mongdb?
+
+Luke said: https://instructure.slack.com/archives/C1PDAKTBN/p1549649452633200
+luke [11:10 AM]
+I would also consider an app like Bridge to basically be two apps. The react front-end is basically an app by itself, and the Rails backend is another. You could build/maintain them completely separately for the most part (with the API as a contract between the two)
+
+Test frameworks for JS
+-----------------------
+Sinon and React drill
+https://github.com/amireh/react-drill
+https://sinonjs.org/releases/v4.1.2/
+mocha
+https://mochajs.org/api/mocha.js.html
+chai
+https://www.chaijs.com/api/bdd/
+
+Other future options Jest and enzyme
+Jest/Enzyme
+https://jestjs.io/docs/en/tutorial-react
+
+Sinon is stubbing and spies. React drill does a pretend "render" of a component and allows us to investigate what sort of things are being rendered and how they respond to user events.
+
+Mocha is just the thing that defines all the `describe` and `it` blocks. Chai defines all the `expect().to.do.stuff`
+
+More Resources
+---------------
+Frameworks
+https://raygun.com/blog/popular-javascript-frameworks/
+
+React
+https://codeburst.io/building-your-first-react-app-c1f6eb814205
+https://reactjs.org/docs/react-component.html#setstate
+https://reactforbeginners.com
+https://advancedreact.com/
+https://reactjs.org/tutorial/tutorial.html
+https://reactjs.org/docs/create-a-new-react-app.html
+https://hackernoon.com/full-stack-web-application-using-react-node-js-express-and-webpack-97dbd5b9d708
+https://reactjs.org/docs/add-react-to-a-website.html
+https://medium.freecodecamp.org/how-to-build-a-react-js-chat-app-in-10-minutes-c9233794642b
+https://daveceddia.com/where-initialize-state-react/
+https://reactjs.org/docs/introducing-jsx.html
+https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2
+https://dev.to/nburgess/creating-a-react-app-with-react-router-and-an-express-backend-33l3
+https://medium.freecodecamp.org/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0
+https://facebook.github.io/create-react-app/docs/adding-bootstrap
+https://html5hive.org/how-to-submit-forms-and-save-data-with-react-js-and-node-js/
+http://buildwithreact.com/tutorial/jsx
+
+Express (and React)
+https://daveceddia.com/create-react-app-express-backend/
+https://expressjs.com/en/starter/hello-world.html
+https://expressjs.com/en/starter/generator.html
+https://blog.cloudboost.io/react-express-the-nodejs-way-of-reacting-and-expressing-7a518e4da3
+http://www.react.express
+
+Electron
+https://flaviocopes.com/react-electron/#create-react-app
+https://medium.com/@brockhoff/using-electron-with-react-the-basics-e93f9761f86f
+https://electronjs.org/docs/tutorial/first-app
+https://discuss.atom.io/t/architecture-which-database-for-an-electron-app/49748
+
+Jquery
+https://api.jquery.com/ready/
+
+Rails (And also sometimes react)
+https://guides.rubyonrails.org/getting_started.html
+https://learnetto.com/blog/3-ways-to-use-react-with-ruby-on-rails-5
+https://www.pluralsight.com/guides/building-a-crud-interface-with-react-and-ruby-on-rails
+https://github.com/rails/webpacker#react
+
+JS Testing
+https://devhints.io/chai
+https://semaphoreci.com/community/tutorials/best-practices-for-spies-stubs-and-mocks-in-sinon-js
+
+https://hackernoon.com/implementing-basic-component-tests-using-jest-and-enzyme-d1d8788d627a
+https://scotch.io/tutorials/how-to-test-nodejs-apps-using-mocha-chai-and-sinonjs
+https://codeburst.io/a-simple-javascript-test-framework-from-scratch-89d6e7d22e74
+https://sinonjs.org/how-to/
+https://guides.rubyonrails.org/v2.3/getting_started.html
+https://medium.com/codeclan/testing-react-with-jest-and-enzyme-20505fec4675
+https://medium.com/@andykhong/how-to-write-tests-for-an-electron-app-7a169fab259a
+https://jestjs.io/docs/en/tutorial-react
+https://www.robinwieruch.de/react-testing-tutorial/
+
+javascript
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files
+
+Sidekiq
+https://github.com/mperham/sidekiq/wiki/Getting-Started
+
+
+CSS
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+Others
+https://www.upwork.com/hiring/development/a-beginners-guide-to-back-end-development/
+https://hackernoon.com/how-to-make-a-terminal-like-portfolio-website-for-yourself-27d7a7030004
+
+Talking to spencer and dkesler:
+Two probably simple react questions for anyone?
+
+This is a react component fetching a json from an express server via api. Is users in the state variable there a declarion, or did it pull from somewhere. Does react not use `var` to declare variables like js?
+```state = {users: []}
+
+  componentDidMount() {
+    fetch('/users')
+      .then(res => res.json())
+      .then(users => this.setState({ users }));
+  }```
+
+And that arrow method `users => this.setState({ users }` basically just uses the json in res.json() and puts it into `users`, correct? I’m pretty sure of that, just confirming.
+
+Thank you!
+
+
+spencer [2:49 PM]
+yeah, you can still use `var`, `const`, and `let` in react, since it's still JS. React's state is a special object that, when changed, triggers the component to re-render
+
+dkesler [2:49 PM]
+that's an abbreviated way of saying `{users: users}` (edited) 
+
+spencer [2:50 PM]
+it's also equivalent to `fetch('/users').then(res => this.setState({ users: res.json() })`
+
+dkesler [2:50 PM]
+provided `res.json()` doesn't throw any errors
+`fetch` returns a promise on which `.then` is called with a callback of `res => res.json()` so when the promise resolves the first callback is called then once that is done the second callback is called
+with the results of the first
+
+In general, you should initialize state in the constructor, and then call setState when you want to change it.
+
+

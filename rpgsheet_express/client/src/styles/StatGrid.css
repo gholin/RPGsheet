@@ -1,0 +1,11 @@
+input, select, textarea {
+  background-color : #006400;
+  color: #66FF66;
+  font-family: courier, monospace;
+  border-color: #66FF66;
+
+}
+#stat-table {
+  background-color: #006400;
+  color: #66FF66;
+}

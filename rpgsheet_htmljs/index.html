@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cyberpunk RPG Character Sheet</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+
+  </head>
+  <h1>Cyberpunk RPG Character Sheet</h1>
+  <body>
+    <div>
+      <img id="cyberguy" src="images/cyberpunk2077guy.png" alt="Character">
+    </div>
+    <div class="stats-grid">
+      <label for="char-name">Name: </label>
+      <input type="text" id="char-name">
+      <!-- <label for="char-name">Name: </label>
+      <input type="text" id="char-name"> -->
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Base</th>
+            <th>+</th>
+            <th>Mods</th>
+            <th>=</th>
+            <th>Value</th>
+            <tr>
+        </thead>
+          <tr id='strength'>
+            <td>STR</td>
+            <td><input type="number" id="str-base"></td>
+            <td>+</td>
+            <td><input type="number" id="str-mod"></td>
+            <td>=</td>
+            <td><input type="number" readonly id="str-value"></td>
+          </tr>
+          <tr id='dexterity'>
+            <td>DEX</td>
+            <td><input type="number" id="dex-base"></td>
+            <td>+</td>
+            <td><input type="number" id="dex-mod"></td>
+            <td>=</td>
+            <td><input type="number" readonly id="dex-value"></td>
+          </tr>
+          <tr id='intelligence'>
+            <td>INT</td>
+            <td><input type="number" id="int-base"></td>
+            <td>+</td>
+            <td><input type="number" id="int-mod"></td>
+            <td>=</td>
+            <td><input type="number" readonly id="int-value"></td>
+          </tr>
+      </table>
+      <script src="js/index.js"></script>
+      <p>
+        <button type="button" class="save-btn" onclick="clickSave()">Save</button>
+      </p>
+    </div>
+    <div id="toast">
+      <div id="icon">L33T!</div>
+      <div id="toast-msg">Saved Successfully!</div>
+    </div>
+  </body>
+</html>

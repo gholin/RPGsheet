@@ -1,0 +1,26 @@
+full-form {
+  background-color : #006400;
+}
+p {
+  color: #66FF66;
+}
+
+#current-table {
+  background-color: #006400;
+  color: #66FF66;
+  border: 2px solid #66FF66;
+  font-family: courier, monospace;
+}
+
+thead {
+  background-color: #333;
+}
+
+#name-field {
+  background-color: #006400;
+  border: 2px solid #66FF66;
+}
+
+#current-table tr{
+  border: 2px solid #66FF66;
+}

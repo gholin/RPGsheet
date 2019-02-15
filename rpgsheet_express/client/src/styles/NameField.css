@@ -1,0 +1,11 @@
+#name-field {
+  float: left;
+  color: #66FF66;
+}
+
+#char-name{
+  border-color: #66FF66;
+  background-color : #006400;
+  color: #66FF66;
+  font-family: courier, monospace;
+}
